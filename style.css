@@ -1,0 +1,207 @@
+/* =========================================
+   OGÓLNY UKŁAD
+========================================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#eef2f7;
+    margin:0;
+    padding:30px;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#lista-lekow{
+    margin-bottom:20px;
+}
+
+/* =========================================
+   KARTY LEKÓW
+========================================= */
+
+.lek{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+.lek h2{
+    margin-top:0;
+}
+
+.lek button{
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:10px 18px;
+    cursor:pointer;
+    margin-top:10px;
+    font-size:15px;
+}
+
+.lek button:hover{
+    opacity:0.9;
+}
+
+/* =========================================
+   GŁÓWNY PRZYCISK
+========================================= */
+
+#dodaj{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:#4f46e5;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#zarzadzaj{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:#64748b;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:12px;
+    transition:.3s;
+}
+
+#zarzadzaj:hover{
+    background:#475569;
+}
+
+#dodaj:hover{
+    background:#4338ca;
+}
+
+/* =========================================
+   FORMULARZ
+========================================= */
+
+.ukryty{
+    display:none !important;
+}
+
+#formularz{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    margin-top:25px;
+    box-shadow:0 6px 15px rgba(0,0,0,.1);
+}
+
+#formularz h2{
+    margin-top:0;
+}
+
+#formularz input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+#zapisz{
+    background:#2ecc71;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#anuluj{
+    background:#e74c3c;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+.czerwony{
+    background-color:#e74c3c;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.zielony{
+    background-color:#2ecc71;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.zielony:hover{
+    background:#27ae60;
+}
+
+/* =========================================
+   OKNO ZARZĄDZANIA
+========================================= */
+
+#okno-zarzadzania{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal{
+    background:white;
+    width:90%;
+    max-width:500px;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+#zamknij-zarzadzanie{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:#64748b;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#zamknij-zarzadzanie:hover{
+    background:#475569;
+}

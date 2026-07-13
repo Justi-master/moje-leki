@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Leki</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💊 Moje Leki</h1>
+
+        <h2 id="data-dzis"></h2>
+
+        <div id="dzisiaj"></div>
+
+        <hr>
+
+        <h2>📚 Wszystkie leki</h2>
+
+        <div id="lista-lekow"></div>
+
+        <button id="dodaj">+ Dodaj lek</button>
+
+        <button id="zarzadzaj">⚙️ Zarządzaj lekami</button>
+
+        <div id="formularz" class="ukryty">
+
+            <h2 id="tytul-formularza">➕ Dodaj lek</h2>
+
+            <input
+                type="text"
+                id="nazwa"
+                placeholder="Nazwa leku">
+
+            <input
+                type="number"
+                id="ilosc"
+                placeholder="Ilość">
+
+            <select id="jednostka">
+                <option value="mg">mg</option>
+                <option value="tabletka">tabletka</option>
+                <option value="kapsułka">kapsułka</option>
+                <option value="ml">ml</option>
+            </select>
+
+            <input
+                type="time"
+                id="godzina">
+
+            <button id="zapisz">Zapisz</button>
+            <button id="anuluj">Anuluj</button>
+
+        </div>
+
+    </div>
+
+    <div id="okno-zarzadzania" class="ukryty">
+
+        <div class="modal">
+
+            <h2>⚙️ Zarządzaj lekami</h2>
+
+            <div id="lista-zarzadzania"></div>
+
+            <button id="zamknij-zarzadzanie">Zamknij</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
