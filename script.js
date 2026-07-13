@@ -1,7 +1,7 @@
 let leki = [
     {
         id: 1,
-        nazwa: "Izotek",
+        nazwa: "Axotret",
         typ: "naprzemienny",
         dawka1: 40,
         dawka2: 20,
